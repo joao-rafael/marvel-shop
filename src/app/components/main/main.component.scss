@@ -1,0 +1,139 @@
+// import in order to use scss variables
+@import './../../../variables.scss';
+
+.main {
+    margin-top: 65px;
+
+    .featured {
+
+        header {
+            background-image: url('./../../../assets/bg.png');
+            height: 200px;
+            width: 100%;
+            position: relative;
+    
+            h2 {
+                color: $color10;
+                font-size: 60px;
+                line-height: 50px;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        .comics {
+            padding: 20px 0px;
+            
+            .card {
+                margin: 0px 20px 20px 0px;
+                display: flex;
+        
+                &.-featured {
+                    display: flex;
+                    flex-direction: row;
+        
+                    picture {
+                        
+                        
+                        img {
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        }
+                    }
+
+                    .content {
+                        font-family: $bebas;
+                        font-size: 18px;
+                        margin-left: 10px;
+                        width: 260px;
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+
+                        h3 {
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                            font-size: 34px;
+                            line-height: 28px;
+                        }
+
+                        button {
+                            background-color: $color20;
+                            color: $color10;
+                            font-weight: bold;
+                            border: none;
+                            padding: 5px 15px;
+                            font-size: 18px;
+                            cursor: pointer;
+                            position: absolute;
+                            bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .others {
+        width: 100%;
+        padding-bottom: 20px;
+
+        .comics {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .card {
+                width: 180px;
+                margin: 0px 10px 10px 0px;
+                display: flex;
+                flex-direction: column;
+    
+                picture {
+                    
+                    
+                    img {
+                        width: 180px;
+                        height: auto;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    }
+                }
+
+                .content {
+                    font-family: $bebas;
+                    font-size: 18px;
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+
+                    h3 {
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                        font-size: 22px;
+                        line-height: 18px;
+                    }
+
+                    button {
+                        background-color: $color20;
+                        color: $color10;
+                        margin-top: 5px;
+                        font-weight: bold;
+                        border: none;
+                        padding: 5px 15px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        bottom: 4px;
+                    }
+                }
+            }
+        }
+
+        header {
+
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    
+}

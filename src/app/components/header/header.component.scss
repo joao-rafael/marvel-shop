@@ -1,0 +1,30 @@
+// import in order to use scss variables
+@import './../../../variables.scss';
+
+.header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: $color10;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    h1 {
+        font-size: 60px;
+
+        span {
+            padding: 0px 8px;
+        }
+    }
+
+    button {
+        font-family: $roboto;
+        background-color: $color20;
+        color: $color10;
+        padding: 0px 20px;
+        border: none;
+    }
+}

@@ -1,0 +1,24 @@
+// import in order to use scss variables
+@import './../../../variables.scss';
+
+.footer {
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    background-color: $color20;
+    color: $color10;
+
+    h3 {
+        font-size: 32px;
+        color: $color10;
+        margin-bottom: 20px;
+
+        span{
+            background-color: $color10;
+            color: $color20;
+        }
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
