@@ -1,0 +1,49 @@
+// import in order to use scss variables
+@import './../../../variables.scss';
+
+.card {
+    margin: 0px 20px 20px 0px;
+    display: flex;
+
+    &.-featured {
+        display: flex;
+        flex-direction: row;
+
+        picture {
+            
+            
+            img {
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+        }
+
+        .content {
+            font-family: $bebas;
+            font-size: 18px;
+            margin-left: 10px;
+            width: 260px;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+
+            h3 {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                font-size: 34px;
+                line-height: 28px;
+            }
+
+            button {
+                background-color: $color20;
+                color: $color10;
+                font-weight: bold;
+                border: none;
+                padding: 5px 15px;
+                font-size: 18px;
+                cursor: pointer;
+                position: absolute;
+                bottom: 4px;
+            }
+        }
+    }
+}
