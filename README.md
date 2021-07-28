@@ -12,7 +12,7 @@ This project uses [scss](https://sass-lang.com/documentation/syntax) for styling
 
 ## Assets
 
-Two image assets were included for this project: 
+Two image assets were included for this project:
     * The cover from the new The United States of Capitain America comic.
     * An image from unsplash.
 These images were compressed using [Tiny PNG](https://tinypng.com/) 
