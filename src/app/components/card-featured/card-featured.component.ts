@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-featured',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-featured.component.scss']
 })
 export class CardFeaturedComponent implements OnInit {
+  @Input() title: string = '';
+  @Input() id: string = '';
+  @Input() character: string = '';
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
   }
 
 }

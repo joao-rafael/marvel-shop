@@ -6,11 +6,14 @@
             </div>
         </header>
         <div class="comics">
-            <div class="container">
-                <app-card-featured>
-                </app-card-featured>
+            <div *ngIf='comics$ | async as comics' class="container">
+                <app-card-featured 
+                *ngFor='let item of comics.data.results.slice(0, 2)'
+                title={{item.title}}
+                id={{item.id}}
+                
+                >
 
-                <app-card-featured>
                 </app-card-featured>
             </div>
         </div>
@@ -21,7 +24,6 @@
                 <h2>Mais quadrinhos</h2>
             </header>
             <div class="comics">
-                
                 <app-card>
                 </app-card>
 
@@ -36,7 +38,6 @@
 
                 <app-card>
                 </app-card>
-
             </div>
         </div>
     </section>
